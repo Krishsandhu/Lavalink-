@@ -11,7 +11,7 @@ lavalink:
   server:
     password: "groover_secret_pass_2026"
     sources:
-      youtube: false # Handled by the youtube-plugin instead
+      youtube: false
       bandcamp: true
       soundcloud: true
       twitch: true
@@ -35,7 +35,6 @@ lavalink:
     resamplingQuality: LOW
     trackStuckThresholdMs: 10000
     useSeekGhosting: true
-    playerUpdateInterval: 5
     youtubePlaylistLoadLimit: 100
     playerUpdateInterval: 5
 
@@ -46,10 +45,10 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
-      - MUSIC
       - ANDROID_MUSIC
-      - WEB
       - TVHTML5EMBEDDED
+      - ANDROID_VR
+      - WEB
     oauth:
       enabled: true
       skipInitialization: false
